@@ -25,8 +25,10 @@ export const simpleCalculator = (
     const { a, b, action } = rawInput;
 
     switch (action) {
-      case Action.Add:
+      case Action.Add: {
+        console.log(a + b);
         return a + b;
+      }
       case Action.Subtract:
         return a - b;
       case Action.Multiply:
